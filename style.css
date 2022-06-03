@@ -193,6 +193,7 @@ section {
 
 .split > * + * {
   margin: 4rem 0 0 0;
+  padding: 1rem;
 }
 
 .split > * {
@@ -219,6 +220,7 @@ section {
   background-image: url(./assets/images/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   border-radius: var(--br);
   padding: 2rem;
   background-color: var(--clr-primary-400);
@@ -355,12 +357,27 @@ section {
   margin: 2em 0;
 }
 
+@media (max-width: 40em) {
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-nav dl {
+    margin-bottom: 4rem;
+  }
+}
+
 footer {
   padding-bottom: 1em;
 }
 
 .footer-nav {
   display: flex;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  border: none;
 }
 
 .footer-nav > *:first-child {
@@ -374,10 +391,16 @@ footer {
 
 .footer-social a {
   font-weight: var(--fw-200);
+  text-decoration: none;
+  border: none;
 }
 
 /* homepage styles */
 
 .intro {
   --flow-spacer: 2em;
+}
+
+.bg-accent {
+  padding: 1rem;
 }
