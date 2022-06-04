@@ -215,7 +215,7 @@ section {
 }
 
 /* components */
-
+/* 
 .primary-header {
   background-image: url(./assets/images/hero.jpg);
   background-size: cover;
@@ -225,6 +225,24 @@ section {
   padding: 2rem;
   background-color: var(--clr-primary-400);
   min-height: 50vh;
+} */
+
+.primary-header {
+  background-size: cover;
+  border-radius: var(--br);
+  padding: 2rem;
+  background-color: var(--clr-primary-400);
+  min-height: 50vh;
+}
+
+.page-home .primary-header {
+  background-image: url(./assets/images/hero.jpg);
+  background-position: center center;
+}
+
+.page-blog .primary-header {
+  background-image: url(./assets/images/blog.jpg);
+  background-position: left center;
 }
 
 .primary-nav {
