@@ -308,6 +308,30 @@ section {
   }
 }
 
+.secondary-navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.secondary-navigation > a:last-child {
+  margin-left: auto;
+}
+
+.categories {
+  margin: 0%;
+  display: flex;
+  margin: 2rem 0px;
+  gap: 1rem;
+}
+
+.categories button {
+  cursor: pointer;
+  border: 0px;
+  text-transform: uppercase;
+  background: transparent;
+  font-size: var(--fs-200);
+}
 .article-preview h3 {
   font-size: var(--fs-500);
 }
