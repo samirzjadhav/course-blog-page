@@ -233,6 +233,18 @@ section {
   padding: 2rem;
   background-color: var(--clr-primary-400);
   min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-header .container {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+}
+
+.primary-header .container > * {
+  max-width: 12ch;
 }
 
 .page-home .primary-header {
