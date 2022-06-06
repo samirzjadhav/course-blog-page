@@ -211,7 +211,7 @@ section {
 }
 
 .xl-space {
-  margin-top: 5rem;
+  margin-top: 5rem !important;
 }
 
 /* components */
@@ -260,6 +260,24 @@ section {
 .page-article .primary-header {
   background-image: url(./assets/images/article.jpg);
   background-position: left center;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.page-article .primary-header::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.45),
+    rgba(255, 255, 255, 0)
+  );
+  z-index: 1;
 }
 
 .primary-nav {
@@ -516,4 +534,16 @@ footer {
   .article-grid > *:nth-child(8) {
     grid-column: span 3;
   }
+}
+
+/* induvisual article page */
+.article-full {
+  max-width: 40em;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0px auto;
+}
+
+.padding {
+  padding: 1rem;
 }
