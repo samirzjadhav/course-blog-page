@@ -286,6 +286,7 @@ section {
   border-radius: var(--br);
   background: var(--clr-neutral-900);
   font-family: var(--ff-serif);
+  z-index: 9999;
 }
 
 .primary-nav ul {
